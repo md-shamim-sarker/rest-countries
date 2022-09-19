@@ -18,6 +18,10 @@ header {
     position: relative;
 }
 
+header h2 {
+    color: white;
+}
+
 .moving-globe {
     position: absolute;
     top: 40px;
@@ -103,11 +107,18 @@ main {
     width: 150px;
 }
 
+footer {
+    text-align: center;
+    padding: 3rem 0;
+}
 
+hr {
+    padding: 2rem 0;
+}
 
 @media screen and (max-width: 768px) {
     select {
-        width: 80vw;
+        width: 50vw;
         font-size: 1.2rem;
         padding: 0.3rem;
         margin-top: 1.3rem;
@@ -116,5 +127,9 @@ main {
     .countries {
         width: 95vw;
         grid-template-columns: 1fr;
+    }
+
+    .moving-globe {
+        display: none;
     }
 }
