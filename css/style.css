@@ -7,3 +7,26 @@
 body {
     background-color: aliceblue;
 }
+
+header {
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../image/banner.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+header>div {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+select {
+    width: 30vw;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    margin-top: 1.3rem;
+}
