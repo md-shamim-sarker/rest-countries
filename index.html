@@ -12,19 +12,31 @@
 
 <body>
     <header>
-        <div>
+        <div class="header-content">
             <h2>Select A Region</h2>
-            <select id="">
+            <select id="regionId">
                 <option value="select" selected>---Select A Region---</option>
                 <option value="Africa">Africa</option>
                 <option value="Americas">Americas</option>
                 <option value="Asia">Asia</option>
                 <option value="Europe">Europe</option>
                 <option value="Oceania">Oceania</option>
-                <option value="All">All</option>
+                <option value="all">All</option>
             </select>
+            <button id="search-btn">Search</button>
+            <h2 id="country-count" class="display-none"><span id="count">59</span> Countries Are Found.</h2>
+        </div>
+        <div class="moving-globe">
+            <img src="./image/flags_globe.gif" alt="flag globe">
         </div>
     </header>
+    <main>
+        <div class="loading" id="loading-spinner">
+            <img src="./image/loading.gif" alt="loading">
+        </div>
+        <div class="countries" id="countries">
+        </div>
+    </main>
     <script src="./js/app.js"></script>
 </body>
 

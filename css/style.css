@@ -5,17 +5,27 @@
 }
 
 body {
-    background-color: aliceblue;
+    overflow-x: hidden;
 }
 
 header {
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
     background-image: url("../image/banner.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
+    position: relative;
+}
 
+.moving-globe {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+}
+
+.moving-globe img {
+    width: 200px;
 }
 
 header>div {
@@ -29,4 +39,82 @@ select {
     font-size: 1.2rem;
     padding: 0.3rem;
     margin-top: 1.3rem;
+}
+
+/* Search button */
+#search-btn {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    margin-top: 1.3rem;
+}
+
+#country-count {
+    margin-top: 1.5rem;
+}
+
+.display-none {
+    display: none;
+}
+
+main {
+    margin: 2rem 0;
+}
+
+.countries {
+    width: 75vw;
+    margin: auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.country {
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.flag {
+    height: 200px;
+}
+
+.flag img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.details {
+    padding: 10px;
+}
+
+.details h2 {
+    text-align: center;
+}
+
+/* Loading Spinner */
+.loading {
+    text-align: center;
+
+}
+
+.loading img {
+    width: 150px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    select {
+        width: 80vw;
+        font-size: 1.2rem;
+        padding: 0.3rem;
+        margin-top: 1.3rem;
+    }
+
+    .countries {
+        width: 95vw;
+        grid-template-columns: 1fr;
+    }
 }
